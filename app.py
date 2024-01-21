@@ -12,7 +12,7 @@ def get_gemini_response(question):
     response = chat.send_message(question, stream = True)
     return response
 
-st.config("Q&A w Shreyansh")
+st.set_page_config("Q&A")
 st.header("Conversations with Shreyansh")
 
 if 'chat_history' not in st.session_state: 
@@ -36,6 +36,17 @@ for role, response in st.session_state['chat_hisotry']:
 
 
 
+
+
+
+
+
+
+
+
+if input and submit: 
+    response = get_gemini_response(input)
+    st.session_state['chat history'].append("")
 
 
 
