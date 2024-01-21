@@ -27,7 +27,7 @@ if input and submit:
     st.subheader("Response: ")
     for chunk in response: 
         st.write(chunk.text)
-        st.session_state['chat_history'].apend(("Response", chunk.text))
+        st.session_state['chat_history'].append(("Response", chunk.text))
 
 st.subheader("Chat history: ")
 
