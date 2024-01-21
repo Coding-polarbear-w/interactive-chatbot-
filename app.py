@@ -31,7 +31,7 @@ if input and submit:
 
 st.subheader("Chat history: ")
 
-for role, response in st.session_state['chat_hisotry']: 
+for role, response in st.session_state['chat_history']: 
     st.write(f"{role}: {response}")
 
 
